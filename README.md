@@ -15,5 +15,5 @@ costs.
 We construct a high-quality, large-scale infrared image dataset. The uncooled infrared images are acquired 
 using both custom-developed devices and commercial infrared imaging systems, with additional data sourced 
 from public datasets. The training data and the result images presented in this paper are available at the following link:
-https://drive.google.com/drive/folders/1CVh5uoHwI9kiUwxKwd-mRGeLgsG9Z1pY?usp=sharing
+https://drive.google.com/file/d/1H6E9JQZNS3iOhHr7wjhCyQekEKKWqQB8/view?usp=sharing
 
