@@ -391,32 +391,7 @@ class EIRSR(nn.Module):
         output = self.UP(x)
         return output
 
-if __name__ == "__main__":
-    device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    upscale = 2
-    num_block = 6
-    num_feat = 16
-    num_in_ch = 1
-    num_out_ch = 1
-    hidden_size = 32
-    attention_drop_rate = 0.0
-    drop_rate = 0.1
-    batch_size = 4
-    image_size = 96
-    ImgLoader = torch.rand([batch_size, num_in_ch, image_size, image_size]).to(device)
-
-    model = EIRSR(
-        upscale=upscale,
-        num_block=num_block,
-        num_feat=num_feat,
-        num_in_ch=num_in_ch,
-        num_out_ch=num_out_ch,
-        hidden_size=hidden_size,
-        attention_drop_rate=attention_drop_rate,
-        drop_rate=drop_rate
-    ).to(device)
-    x = model(ImgLoader)
 
 
 
